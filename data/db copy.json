@@ -1,0 +1,22 @@
+{
+    "blogs": [
+        {
+            "title": "My new 'Adventure' blog!",
+            "body": "Super excited to hang out with 'old Ben' \n He says we should go see a princess, no matter wHAt my uncle says!",
+            "author": "Luke Skywalker",
+            "id": 1
+        },
+        {
+            "title": "Jabba's greedy",
+            "body": "What was I supposed to do - \n Even I get borded sometimes. \n I need a new job to save my neck ASAP ...",
+            "author": "Han Solo",
+            "id": 2
+        },
+        {
+            "title": "I wish I knew my father ...",
+            "body": "Found a bunch of dead jawas \n Went back home \n Owen & Veru are dead \n I'm sad",
+            "author": "Luke Skywalker",
+            "id": 3
+        }
+    ]
+}

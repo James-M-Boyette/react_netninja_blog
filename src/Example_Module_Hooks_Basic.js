@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ExampleModuleHooks = () => {
+const ExampleModuleHooksBasic = () => {
     let changeThisVar = "Luke Skywalker";
     const [changeThisVar2, setName] = useState("Yoda");
 
@@ -25,7 +25,12 @@ const ExampleModuleHooks = () => {
 
     return (
         <div className="exampleModuleHooks">
-            <h2>React 'Hooks' Examples:</h2>
+            <h4>(_Hooks_Basic)</h4>
+            <h4 style={{ marginTop: "20px" }}>
+                Here, we've written our own, bespoke Hook functions in order to
+                begin exploring React's implementation of in-line 'Hook'
+                functions ...
+            </h4>
             <br />
             {/* In order to refer to our function, we use only handleClick (and not the invocation handleClick() - which would *automatically* trigger the function regardless of click) */}
             <div className="explanation">
@@ -100,4 +105,4 @@ const ExampleModuleHooks = () => {
     );
 };
 
-export default ExampleModuleHooks;
+export default ExampleModuleHooksBasic;

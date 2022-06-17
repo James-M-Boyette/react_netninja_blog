@@ -6,7 +6,9 @@ import React from "react";
 
 // Modules:
 import ExampleModuleBasics from "./Example_Module_Basics";
-import ExampleModuleHooks from "./Example_Module_Hooks";
+import ExampleModuleHooksBasic from "./Example_Module_Hooks_Basic";
+import ExampleModuleHooksStateEffect from "./Example_Module_Hooks_StateEffect";
+import ExampleModuleHooksSEDBBasic from "./Example_Module_Hooks_SEDBBasic";
 import Navbar from "./Navbar";
 import Home from "./Home";
 
@@ -17,15 +19,22 @@ function App() {
         // Here, we're returning a JSX template
         <div className="App">
             <Navbar />
-            <div className="content">
+            {/* <div className="contentBlock"> */}
+            <div className="content contentBlock">
                 <Home />
-                {/* <ExampleModule /> */}
             </div>
-            <div>
+            {/* </div> */}
+            <div className="content contentBlock">
                 <ExampleModuleBasics />
             </div>
-            <div>
-                <ExampleModuleHooks />
+            <div className="content contentBlock">
+                <ExampleModuleHooksBasic />
+            </div>
+            <div className="content contentBlock">
+                <ExampleModuleHooksStateEffect />
+            </div>
+            <div className="content contentBlock">
+                <ExampleModuleHooksSEDBBasic />
             </div>
         </div>
     );

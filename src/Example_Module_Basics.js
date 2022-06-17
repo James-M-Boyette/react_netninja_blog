@@ -9,12 +9,39 @@ const ExampleModuleBasics = () => {
     const link = "http://ww.google.com";
     return (
         <div className="exampleContent">
-            <h1>{title}</h1>
-            <p>Liked {likes} times</p>
-            <p>{10}</p>
-            <p>{"I'm a string"}</p>
-            <p>{[1, 2, 3, 4, 5]}</p>
-            <p>{Math.random() * 10}</p>
+            <h4 style={{ marginBottom: "10px" }}>(_Basics)</h4>
+            <h4 style={{ marginBottom: "20px" }}>
+                Here, we're demonstrating the basic functionality of JSX (both
+                what we can, and cannot project to the render) ...
+            </h4>
+            {/* <h1>{title}</h1> */}
+            <h3>What *can* we render ?</h3>
+            <h4>Numbers:</h4>
+            <ul>
+                <li>{10}</li>
+            </ul>
+            <h4>Strings:</h4>
+            <ul>
+                <li>{"I'm a string"}</li>
+            </ul>
+            <h4>Arrays:</h4>
+            <ul>
+                <li>{[1, 2, 3, 4, 5]}</li>
+            </ul>
+            <h4>Concatonated Variables:</h4>
+            <ul>
+                <li>Liked {likes} times</li>
+            </ul>
+            <h4>Links:</h4>
+            <ul>
+                <li>
+                    <a href={link}>Google that!</a>
+                </li>
+            </ul>
+            <h4>Method / Function outputs:</h4>
+            <ul>
+                <li>{Math.random() * 10}</li>
+            </ul>
 
             {/* Boolean and objects aren't rendered: */}
             {/* <p>{true}</p>  */}
@@ -25,8 +52,6 @@ const ExampleModuleBasics = () => {
                     last_name: "Johnson",
                 }}
             </p> */}
-
-            <a href={link}>Google that!</a>
         </div>
     );
 };
