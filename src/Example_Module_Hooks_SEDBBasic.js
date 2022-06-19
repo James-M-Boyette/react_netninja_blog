@@ -53,6 +53,7 @@ const ExampleModuleHooksSEDBBasic = () => {
                 forcing our BlogList to only render *after* our 'blogs' constant
                 has been populated with the results.
             </h4>
+            {/* "Conditional Templates": */}
             {/* Here, once we're sending and waiting on request responses from a server (instead of using in-line data), we need to wait for the return of that data. This is bc of two reasons: */}
             {/* 1. We no longer have our data in-line - and in our previous versions of this React template, BlogList was rendered for the first time @ runtime using said in-line data. Now, we're setting our in-line data to be 'null' initially - so on first render, our .map() will try and fail to run on a now-absent array*/}
             {/* 2. We need to wait for our data to come back from the server (as an array of objects) so that our template's .map() can do its work properly  */}

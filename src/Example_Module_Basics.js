@@ -4,7 +4,7 @@ import React from "react";
 // In templates, you can output most of the same scalar values as other languages. You cannot, however, export *booleans*. Nor can you output *objects*. See below ...
 
 const ExampleModuleBasics = () => {
-    const title = "Welcome to the new React blog!";
+    // const title = "Welcome to the new React blog!";
     const likes = 50;
     const link = "http://ww.google.com";
     return (
@@ -15,7 +15,9 @@ const ExampleModuleBasics = () => {
                 what we can, and cannot project to the render) ...
             </h4>
             {/* <h1>{title}</h1> */}
+            <br />
             <h3>What *can* we render ?</h3>
+            <br />
             <h4>Numbers:</h4>
             <ul>
                 <li>{10}</li>
