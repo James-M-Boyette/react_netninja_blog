@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BlogList from "./BlogList";
+import BlogList from "./templates/BlogList";
 
 const ExampleModuleHooksStateEffect = () => {
     // Here is hard-coded data to be used with our Hooks *before* we use a backend REST API server in videos 12-15 ...

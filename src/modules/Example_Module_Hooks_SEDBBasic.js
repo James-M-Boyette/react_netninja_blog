@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import BlogListBasic from "./BlogListBasic";
+import BlogListBasic from "./templates/BlogListBasic";
 
 // Video #17
 

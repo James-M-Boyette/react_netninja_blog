@@ -50,3 +50,17 @@
 
 -   ...SEDBBasic = useState useEffect Database Basic
 -   In this module, we've stopped using in-line data, and are now (using the "JSON router" plugin/dependancy/library) making basic REST API calls (to a folder 'data' with json file 'db.json')
+
+###### Example_Module_Hooks_Errors
+
+-   In this module, we've "broken" our database endpoint so that the request returns a failed response.
+-   Next, we've written a hook to handle _both_ fetching our data _and_ when an error is thrown. We've also created a custom message for that error, and made React render that error message when the Hook is triggered
+
+###### Example_Module_Hooks_ErrorsV2
+
+-   In this module, we've transfered our 'fetch + error' Hook out of the file and into a seperate module 'useFetch' - so that we can re-use it in any and all other modules. This is what's known as "creating a '_custom_' Hook" ...
+-   Note: _ANY_ custom Hook must have its name begun with 'use' - a syntactical rule React uses to recognize Hooks
+
+git mv src/Example_Module_Basics.jssrc/Example_Module_Hooks_Basic.jssrc/Example_Module_Hooks_SEDBBasic.jssrc/Example_Module_Hooks_StateEffect.jssrc/modules/
+
+src\Example_Module_Basics.js

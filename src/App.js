@@ -5,11 +5,13 @@
 import React from "react";
 
 // Modules:
-import ExampleModuleBasics from "./Example_Module_Basics";
-import ExampleModuleHooksBasic from "./Example_Module_Hooks_Basic";
-import ExampleModuleHooksStateEffect from "./Example_Module_Hooks_StateEffect";
-import ExampleModuleHooksSEDBBasic from "./Example_Module_Hooks_SEDBBasic";
-import Navbar from "./Navbar";
+import ExampleModuleBasics from "./modules/Example_Module_Basics";
+import ExampleModuleHooksBasic from "./modules/Example_Module_Hooks_Basic";
+import ExampleModuleHooksStateEffect from "./modules/Example_Module_Hooks_StateEffect";
+import ExampleModuleHooksSEDBBasic from "./modules/Example_Module_Hooks_SEDBBasic";
+import ExampleModuleHookErrors from "./modules/Example_Module_Hooks_Errors";
+import ExampleModuleHooksErrorsV2 from "./modules/Example_Module_Hooks_ErrorsV2";
+import Navbar from "./modules/templates/Navbar";
 import Home from "./Home";
 
 console.log("React ver:", React.version);
@@ -35,6 +37,12 @@ function App() {
             </div>
             <div className="content contentBlock">
                 <ExampleModuleHooksSEDBBasic />
+            </div>
+            <div className="content contentBlock">
+                <ExampleModuleHookErrors />
+            </div>
+            <div className="content contentBlock">
+                <ExampleModuleHooksErrorsV2 />
             </div>
         </div>
     );

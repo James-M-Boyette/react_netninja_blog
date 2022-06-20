@@ -1,26 +1,13 @@
+import { isPending } from "q";
 import React, { useState, useEffect } from "react";
 // import BlogList from "./BlogList";
-import BlogListBasic from "./BlogListBasic";
+import BlogListBasic from "./modules/templates/BlogList";
+import useFetch from "./modules/hooks/useFetch";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null);
-    const [isPending, setIsPending] = useState(true);
-
-    // Video #17
-    // Note: if you wanted this to be an asynchronous function, you'd need to externalize the function - but this hook itself cannot use async (! useEffect(async () => {}))
-    useEffect(() => {
-        setTimeout(() => {
-            // Here, we're simulating the delay our browser would experience while waiting to receive data ...
-            fetch("http://localhost:8000/blogs")
-                .then((res) => {
-                    return res.json();
-                })
-                .then((data) => {
-                    setBlogs(data);
-                    setIsPending(false); // 33
-                });
-        }, 2000);
-    }, []);
+    const { data: blogs, isPending, error } = useFetch(
+        "http://localhost:8000/blogs"
+    );
 
     return (
         <div className="home">
@@ -42,8 +29,7 @@ const Home = () => {
                     title="All Blogs, based on current tutorial work"
                 />
             )}
-            <br />
-            <br />
+            {error && <div>{error}</div>}
         </div>
     );
 };
